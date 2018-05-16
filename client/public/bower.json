@@ -1,0 +1,21 @@
+{
+  "name": "chat-bots",
+  "description": "chat-bots",
+  "main": "views/index.html",
+  "authors": [
+    "Yuvraj Yadav <yuvrajdhl@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chat-bots"
+  ],
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

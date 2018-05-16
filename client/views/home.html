@@ -1,0 +1,84 @@
+<div class="row">
+    <h2>{{title}}</h2>
+    <br>
+    <div class="col-sm-6 center">
+      <% if(msg) { %> <div> <%=msg %> </div> <% } %>
+      <div class="bs-example bs-example-tabs">
+          <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+            <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+        </ul>
+      </div>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal" method="post" action="/user/signin">
+            <fieldset>
+            <!-- Sign In Form -->
+            <div class="control-group">
+              <label class="control-label" for="loginusername">Username:</label>
+              <div class="controls">
+                <input id="loginusername" name="username" type="text" class="form-control" placeholder="yuvraj" class="input-medium" required>
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="loginpassword">Password:</label>
+              <div class="controls">
+                <input id="loginpassword" name="password" class="form-control" type="password" placeholder="********" class="input-medium" required>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal" method="post" action="/user/signup">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <div class="control-group">
+              <label class="control-label" for="Email">Full Name:</label>
+              <div class="controls">
+                <input id="fullname" name="fullname" class="form-control" type="text" placeholder="Yuvraj Yadav" class="input-large" required>
+              </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="Email">Email:</label>
+                <div class="controls">
+                    <input id="email" name="email" class="form-control" type="text" placeholder="yuvrajdhl@gmail.com" class="input-large" required>
+                </div>
+            </div>
+            
+            <div class="control-group">
+              <label class="control-label" for="userid">Username:</label>
+              <div class="controls">
+                <input id="username" name="username" class="form-control" type="text" placeholder="yuvraj" class="input-large" required>
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">Password:</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required>
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+</div>

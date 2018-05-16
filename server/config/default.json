@@ -1,0 +1,9 @@
+{
+    "HOST": "localhost",
+    "PORT": "3002",
+    "VIEWDIR": "views",
+    "PUBLICDIR": "public",
+    "SOCKETDIR": "node_modules",
+    "MONGODB":"mongodb://localhost:27017/manish",
+    "HASH":"go2018pal"
+}
