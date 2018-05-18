@@ -2,12 +2,8 @@
 * Manage app with express
 */
 const express = require('express'),
-    path = require('path'),
     logger = require('morgan'),
     bodyParser = require('body-parser'),
-    session = require('express-session'),
-    MongoStore = require('connect-mongo')(session),
-    config = require('config'),
     app = express();
 
 // app path and body parser
@@ -19,7 +15,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('*',function (req, res, next) {
     req.io = global.io;
     req.socket = global.socket;
-    next()
+    next();
+    console.log(`get request`)
 });
 app.use('/', require('./router'));
 

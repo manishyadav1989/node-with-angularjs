@@ -1,5 +1,5 @@
 {
-    "HOST": "localhost",
+    "HOST": "172.17.0.40",
     "PORT": "3002",
     "VIEWDIR": "views",
     "PUBLICDIR": "public",

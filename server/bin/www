@@ -13,8 +13,7 @@ const app = require('../app'),
 /**
  * Get port from environment and store in Express.
  */
-
-var port = normalizePort(process.env.PORT || config.get('PORT'));
+var port = normalizePort(config.get('PORT') || process.env.PORT);
 app.set('port', port);
 
 /**
@@ -94,4 +93,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log(`Listening on => ${JSON.stringify(addr)} `);
 }
